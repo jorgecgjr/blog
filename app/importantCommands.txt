@@ -1,0 +1,35 @@
+Comandos Laravel
+
+    composer global require laravel/installer //Da acceso a los comandos laravel en la terminal
+
+    laravel new nombre-proyecto //Crea un nuevo proyecto con laravel
+
+
+
+Comandos Git
+
+    git init //Inicializa un repositorio local
+
+    git add archivo //Añade los cambios del archivo especificado a stash
+
+    git add . //Añade TODOS los cambios a stash
+
+    git commit -m "Comentario" //Hace commit de los cambios en stash
+
+    git remote add origin https://github.com/nombre-usuario/nombre-repo.git //Conecta un repositorio remoto
+
+    git branch //Indica la rama en la que se está trabajando actualmente
+
+    git branch -M nombre-branch // Renombra la rama actual
+
+    git remote add origin https://github.com/jorgecgjr/blog.git //Define el nombre del repositorio ubicado en esa url como origin
+
+    git push origin main //Sube la rama main al repositorio remoto llamado origin
+
+    git pull origin main //Trae todos los cambios de la rama main del repositorio en github
+
+    git pull origin main --allow-unrelated-histories //Cuando el historial de tu repositorio local y el remoto no tienen relación (Por ejemplo si se inicio un repositorio local y aparte se creo un en github)
+    
+ 
+
+
