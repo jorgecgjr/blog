@@ -2,18 +2,20 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 
 /*Route::get('/', function () {
     return view('welcome');
 });*/
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', HomeController::class);
+Route::get('/posts', [PostController::class, 'index']);
+Route::get('/posts/create', [PostController::class, 'create']);
+Route::get('/posts/{post}', [PostController::class, 'show']);
 
-Route::get('/prueba', function () {
-    return "Esta es una ruta de pruebas";
-});
 
-Route::get('/{variable}/{categoria?}', function ($variable, $categoria = null){
+
+/*Route::get('/{variable}/{categoria?}', function ($variable, $categoria = null){
 
     if ($categoria)
     {
@@ -24,6 +26,6 @@ Route::get('/{variable}/{categoria?}', function ($variable, $categoria = null){
 
 Route::get('/{variable}', function ($variable){
     return "Estamos en la ruta $variable";
-});
+});*/
 
 

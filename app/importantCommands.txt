@@ -32,7 +32,7 @@ Comandos Git
 
 Comandos PHP
 
-    php artisan make:controller // Crea un controlador
+    php artisan make:controller Nombre-controlador // Crea un controlador
 
     [object, 'nombre-método'] o [className, 'nombre-método'] // Sintaxis de un 'Callable'
  
